@@ -12,7 +12,7 @@ class Step2_LoadToCache_Wset:
         robj.conRdb().delete('dct_name_score')
         print("dct_name_id",robj.getRDict("dct_name_id"))
         sql = 'select id,facture_name,wscore from Wset_Weight'
-        conn = DBUtils.condb(self)
+        conn = DBUtils().condb(self)
         coursor = conn.cursor()
         coursor.execute(sql)
         data = coursor.fetchall()
