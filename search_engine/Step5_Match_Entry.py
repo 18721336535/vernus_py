@@ -6,6 +6,7 @@ from Step4_score_algorithm import Score_Algorithm
 class Match_Entry:
     #idj t1
     def enty(self):
+        #query mx
         sql = 'select id, ly_fv from  ly_fv_matrix'
         sql2 = 'select id, zs_fv from  zs_fv_matrix'
         conn = DBUtils().condb(self)
