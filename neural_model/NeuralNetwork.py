@@ -2,7 +2,8 @@ import numpy as np
 
 class NeuralNetwork:
     
-    #cmd t1
+    #cmd t1 x
+    #cmd t2
     def __init__(self):
         # 将权重转化为一个3x1的矩阵，其值分布为-1~1，并且均值为0
         self.synaptic_weights = np.random.rand(3, 1)
