@@ -4,6 +4,7 @@ import numpy as np
 from CommonUtils.DBUtils import DBUtils
 from Step4_score_algorithm import Score_Algorithm
 class Match_Entry:
+    #idj t1
     def enty(self):
         sql = 'select id, ly_fv from  ly_fv_matrix'
         sql2 = 'select id, zs_fv from  zs_fv_matrix'
