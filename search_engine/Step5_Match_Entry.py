@@ -6,6 +6,7 @@ from Step4_score_algorithm import Score_Algorithm
 class Match_Entry:
     #idj t1
     def enty(self):
+        #query mx
         sql = 'select id, ly_fv from  ly_fv_matrix'
         sql2 = 'select id, zs_fv from  zs_fv_matrix'
         conn = DBUtils().condb(self)
@@ -29,10 +30,11 @@ class Match_Entry:
         np.max(two_multi_res[0])
 
         # Score_Algorithm().match_function(fv_f_lst,zs_num_lst)
-
+    # def
     def strlst_to_num_lst(self,lst):
         fv_lst = lst.split(',')
         fv_f_lst = []
         for f in len(fv_lst):
             fv_f_lst[f] = float(fv_lst[f])
         return fv_f_lst
+    
