@@ -1,5 +1,5 @@
 import numpy as np
-
+#neural model
 class NeuralNetwork:
 
     #cmd t1
